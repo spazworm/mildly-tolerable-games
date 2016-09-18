@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->
+				<div id="searchbar">
+					<h3>Help</h3>
+	 			</div>
+	 			
+	 			<div id="textbox">
+	 				<div style="font-size:small;">Note: For any questions not covered by the FAQ please login and  fill
+	 				out the feedback form at the bottom of the page.</div>
+	 				<br>		 			
+					<div style="font-size:large; font-weight:bold;">Frequenty Asked Questions (FAQ)</div>
+					<br>
+					
+					Why can't I add items to cart
+					<div style="font-size:small;">Before purchasing items you must first register
+					 and login, after which you can navigate to any product's page and click the
+					  add to cart button and follow the prompts.</div>
+					<br>
+					
+					What protection does this site give to software piracy
+					<div style="font-size:small;">At the moment this site does not have any anti-piracy 
+					measures in place, it is the opinion of the site's owner that any Digital Rights
+					Managment may just get in the way of people enjoying the product, especially in
+					the case of products that require no internet connection to be played. In an ideal 
+					world we'd like to try and trust our customers to give us a fair go and if they really
+					enjoy a product it would be great if they could make a purchase of it.</div>
+					<br>
+
+					I lost my downloaded copy of a game, where can I re-download it
+					<div style="font-size:small;">You can re-download any purchase at any time by
+					logging into the site and clicking the "View Account" button on any page which
+					will take you to a list of all products you've purchases along with download 
+					links to re-download them.</div>
+					<br>
+					
+					What templates were used for creating this site, where can I get them
+					<div style="font-size:small;">There were no templates or design tools used in the
+					creation of this site, the code for every style, line and feature was coded specifically 
+					for this site as a demonstration of the designer's training.</div>
+					<br>
+					
+					What email address can I use to get in contact directly with the site's owner
+					<div style="font-size:small;">Please feel free to contact me any time through 
+					my email address spazworm@gmail.com.</div>
+					<br>
+	 			</div>
+	 			
+	 			<div id="textbox">
+	 				<div style="font-size:large; font-weight:bold;">Feedback Form</div
+	 				<form action="../php/feedbackform.php" method="post">
+	 					<table style="margin-right:12px">
+		 					<tr>
+		 						<td>
+		 							Email:
+		 						</td>
+		 						<td>
+		 							<input type="text" name="email">
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td>
+		 							Subject:
+		 						</td>
+		 						<td>
+		 							<input type="text" name="subject">
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td>
+		 							Message:
+		 						</td>
+		 						<td style="width:100%;">
+		 							<textarea name="message" style="width:inherit;" rows="10"></textarea>
+		 						</td>
+		 					</tr>
+		 					<tr>
+		 						<td>
+		 						</td>
+		 						<td>
+		 							<input type="submit" value="Send">
+		 						</td>
+		 					</tr>
+	 					</table>
+	 				</form>
+	 			</div>
+	 			
+
+
+				
+				<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

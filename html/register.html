@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->Right Column Here<br>
+				<h5>Registration</h5>
+				<br>
+				<form action="../php/register.php" method="post">
+				<table>
+				<tr><td class="rightaligntd">First Name:</td><td><input type="text" name="fname"></td></tr>
+				<tr><td class="rightaligntd">Last Name:</td><td><input type="text" name="lname"></td></tr>
+				<tr><td class="rightaligntd">Unit No:</td><td><input type="text" name="unitno"></td></tr>
+				<tr><td class="rightaligntd">Street No:</td><td><input type="text" name="streetno"></td></tr>
+				<tr><td class="rightaligntd">Street Name:</td><td><input type="text" name="streetname"></td></tr>
+				<tr><td class="rightaligntd">City/Town:</td><td><input type="text" name="citytownname"></td></tr>
+				<tr><td class="rightaligntd">Postcode:</td><td><input type="text" name="postcode"></td></tr>
+				<tr><td class="rightaligntd">State:</td><td><input type="text" name="state"></td></tr>
+				<tr><td class="rightaligntd">Country:</td><td><input type="text" name="country"></td></tr>
+				<tr><td class="rightaligntd">Username:</td><td><input type="text" name="username"></td></tr>
+				<tr><td class="rightaligntd">Email:</td><td><input type="text" name="email"></td></tr>
+				<tr><td class="rightaligntd">Confirm Email:</td><td><input type="text" name="confirmemail"></td></tr>
+				<tr><td class="rightaligntd">Password:</td><td><input type="password" name="password"></td></tr>
+				<tr><td class="rightaligntd">Confirm Password:</td><td><input type="password" name="confirmpassword"></td></tr>
+				<tr><td colspan="2" class="centeraligntd"><input type="submit" value="Submit"></td></tr>
+				</table>
+				</form>
+				
+				
+				
+				
+				
+					<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

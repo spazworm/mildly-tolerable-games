@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->
+				
+					<div id="salebartitle">
+						<h3>HOT SALES!</h3>
+					</div>
+					
+					<div id="salediv" onclick="location.href='../html/product.html?product=1';">
+						<img alt="supermeatboycover" height="250px" src="../images/testimages/supermeatboycover.png" width="250px">
+						<div id="infoinsalediv">
+							<table style="width:250px; padding:1px;">
+								<tr>
+									<td colspan="2" style="text-align:center;"><h4>Super Meat Boy</h4></td>
+									</tr>
+									<tr>
+									<td>$2.50</td>
+									<td style="text-align:right;">75% OFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<div id="salediv0">
+						<img alt="fezcover" height="250px" src="../images/testimages/fezcover.png" width="250px">
+						<div id="infoinsalediv0">
+							<table style="width:250px; padding:1px;">
+								<tr>
+									<td colspan="2" style="text-align:center;"><h4>Fez</h4></td>
+									</tr>
+									<tr>
+									<td>$5.00</td>
+									<td style="text-align:right;">50% OFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<div id="largelistitem">
+					
+						<div id="largelistitemimage">
+						<img alt="rollingthundercover" src="../images/testimages/rollingthundercover.png" height="150px" width="150px">
+						</div>
+						
+						<div id="largelistitemrightcontent">
+						
+							<div id="largelistitemtitle">
+								<h3>Rolling Thunder</h3>
+							</div>
+							
+							<div id="largelistitemtext">
+								Rolling Thunder (ローリングサンダー Rōringu Sandā?) is a side-scrolling action game produced by Namco (now known as Namco Bandai Games) originally released in as a coin-operated arcade game which ran on the Namco System 86 hardware. It was distributed internationally outside Japan by Atari Games. The player takes control of a secret agent who must rescue his female partner from a terrorist organization. Rolling Thunder was released for various computer platforms in 1987 and the Family Computer and Nintendo Entertainment System in 1989. The original arcade game has also been included in various classic game compilations as well.							
+							</div>
+							
+							<div id="largelistitemprice">
+								$1.99
+							</div>
+						
+						</div>					
+					</div>
+					
+					<div id="largelistitem0">
+					
+						<div id="largelistitemimage0">
+						<img alt="contracover" src="../images/testimages/contracover.png" height="150px" width="150px">
+						</div>
+						
+						<div id="largelistitemrightcontent0">
+						
+							<div id="largelistitemtitle2">
+								<h3>Contra</h3>
+							</div>
+							
+							<div id="largelistitemtext0">
+								Contra (魂斗羅 Kontora?), known as Probotector and occasionally Gryzor in Europe and Oceania, is a 1987 run and gun action game developed and published by Konami originally released as a coin-operated arcade game on February 20, 1987.[5] A home version was released for the Nintendo Entertainment System in 1988, along with ports for various computer formats, including the MSX2. The home versions were localized in the PAL region as Gryzor on the various computer formats and as Probotector on the NES, released later. Several Contra sequels were produced following the original game.							
+							</div>
+							
+							<div id="largelistitemprice0">
+								$2.99
+							</div>
+						
+						</div>					
+					</div>
+					
+					<div id="largelistitem1">
+					
+						<div id="largelistitemimage1">
+						<img alt="ftlcover" src="../images/testimages/ftlcover.png" height="150px" width="150px">
+						</div>
+						
+						<div id="largelistitemrightcontent1">
+						
+							<div id="largelistitemtitle1">
+								<h3>Faster Than Light</h3>
+							</div>
+							
+							<div id="largelistitemprice1">
+								$9.99
+							</div>
+							
+							<div id="largelistitemtext1">
+								FTL: Faster Than Light is a top down, real time strategy video game created by indie developers Subset Games. In the game, the player controls the crew of a single spacecraft, holding critical information to be delivered to an allied fleet several sectors away, while being pursued by a large rebel fleet. The player must guide the spacecraft over a number of sectors, each with planetary systems and events procedurally generated in a roguelike fashion, while facing against rebel and other hostile forces, recruiting new crew, and outfitting and upgrading their ship. Combat takes place in pausable real time, and if the ship is destroyed or the crew lost, the game ends in permadeath, requiring the player to restart.							
+							</div>
+						
+						</div>					
+					</div>
+					
+					<div id="largelistitem2">
+					
+						<div id="largelistitemimage2">
+						<img alt="earthwormjimcover" src="../images/testimages/earthwormjimcover.PNG" height="150px" width="150px">
+						</div>
+						
+						<div id="largelistitemrightcontent2">
+						
+							<div id="largelistitemtitle3">
+								<h3>Earthworm Jim</h3>
+							</div>
+							
+							<div id="largelistitemtext2">
+								Earthworm Jim is a run and gun platform video game featuring an earthworm named Jim in a robotic suit who battles evil. Created by Doug TenNapel and designed by David Perry, the game was developed by Shiny Entertainment and Playmates Interactive Entertainment. It was released for the Sega Genesis in 1994, and subsequently ported to a number of other video game consoles. The game was noted for its fluid, cartoon-like animation. It was well-received by critics, and received a sequel, Earthworm Jim 2, in 1995. Fifteen years later, Gameloft developed a high definition remake for the PlayStation Network and Xbox Live Arcade, titled Earthworm Jim HD, in 2010.						
+							</div>
+							
+							<div id="largelistitemprice2">
+								$0.99
+							</div>
+						
+						</div>					
+					</div>
+					<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

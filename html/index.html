@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->
+				
+					<?php include('../php/genslideshowscript.php'); ?>
+					<!-- <script>
+						slides = new Array('../images/banner01.jpg', '../images/banner02.jpg', '../images/banner03.jpg');
+						slide = 0;
+						
+						autoSlide = setInterval(function(){showslides(1)},10000);
+						
+						function resetAutoSlide() {
+							autoSlide = setInterval(function(){showslides(1)},10000);
+						}
+						
+						function gotoslidebynavsquare (slideNumber){
+							clearInterval(autoSlide);
+							autoSlide = setInterval(function(){resetAutoSlide()},60000);
+							gotoslide(slideNumber);
+						}
+						
+						function gotoslide(slideNumber) {
+							document.getElementById('navsquare' + (slide + 1)).src='../images/navsquare.png';
+							slide = slideNumber;
+							document.getElementById('navsquare' + (slide + 1)).src='../images/selectednavsquare.png';
+							document.getElementById('slideshow').src=slides[slide];
+						}
+												
+						function showslides(slidenav) {
+							newslidelocation = slide + slidenav;
+							if(newslidelocation == 3) {
+								newslidelocation = 0;
+							}
+							if(slide == -1) {
+								newslidelocation = 3;
+							}
+							gotoslide(newslidelocation);
+						}
+					</script> -->
+					<div id="searchbar">
+						<h3>Featured Products</h3>
+	 				</div>
+	 				<div style="margin-left:10px;">
+	 				<div id="slideshowdiv">
+	 					<a id="slidehyperlink" href="../html/index.html"><img alt="slideshow" src="../images/navsquare.png" id="slideshow"/>
+	 					</a>
+	 					<div id="leftarrowbox">
+	 						<img alt="leftarrow" src="../images/leftarrow.png" id="leftarrow" onclick="gotoslidebyarrow(-1);"/>
+	 					</div>
+	 					<div id="rightarrowbox">
+	 						<img alt="rightarrow" src="../images/rightarrow.png"id="rightarrow" onclick="gotoslidebyarrow(1);"/>
+	 					</div>
+	 					<div id="slideshownav">
+	 						<img class="navsquare" alt="nav" id="navsquare1" src="../images/selectednavsquare.png" onclick="gotoslidebynavsquare(0)">
+	 						<img class="navsquare" alt="nav" id="navsquare2" src="../images/navsquare.png" onclick="gotoslidebynavsquare(1)">
+	 						<img class="navsquare" alt="nav" id="navsquare3" src="../images/navsquare.png" onclick="gotoslidebynavsquare(2)">
+	 						<img class="navsquare" alt="nav" id="navsquare4" src="../images/navsquare.png" onclick="gotoslidebynavsquare(3)">
+	 						<img class="navsquare" alt="nav" id="navsquare5" src="../images/navsquare.png" onclick="gotoslidebynavsquare(4)">
+	 					</div>
+	 					<div id="slideshowinfo">
+	 						<div id="slideshowinfobox">
+	 						<div id="slideshowinfotitle">
+	 							Earthworm Jim
+	 						</div>
+	 						<div id="slideshowinfomore">
+	 							On Sale Now!
+	 						</div>
+	 						</div>
+	 					</div>
+					</div>
+					</div>
+					
+					<?php include "../php/new.php" ?>
+
+					<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

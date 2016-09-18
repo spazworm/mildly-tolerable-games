@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->
+				<script>
+					function disableotherinputs() {
+						document.getElementById('cardnumber').disabled = true;
+						document.getElementById('cardname').disabled = true;
+						document.getElementById('expmonth').disabled = true;
+						document.getElementById('expyear').disabled = true;
+						document.getElementById('cardtype').disabled = true;
+					}
+					function enableotherinputs() {
+						document.getElementById('cardnumber').disabled = false;
+						document.getElementById('cardname').disabled = false;
+						document.getElementById('expmonth').disabled = false;
+						document.getElementById('expyear').disabled = false;
+						document.getElementById('cardtype').disabled = false;
+					}
+
+				</script>
+				
+				<?php include('../php/paymenterror.php'); ?>
+
+				<div id="searchbar">
+						<h3>Payment Details</h3>
+	 			</div>
+
+				<form action="../php/validatepayment.php" method="post">
+					<table class="fullwidthtable">
+						<tr>
+							<td class="rightaligntd">
+								Payment Type:
+							</td>
+							<td>
+								&nbsp;&nbsp;&nbsp;Paypal:<input type="radio" name="paytype" value="paypal" onclick="disableotherinputs()"> 
+								Card:<input type="radio" name="paytype" value="card" onclick="enableotherinputs()">
+							</td>
+						</tr>
+						<tr>
+							<td class="rightaligntd">
+								Card Type:
+							</td>
+							<td>
+								<select name="cardtype" id="cardtype">
+									<option value="select">Select</option>
+									<option value="visa">Visa</option>
+									<option value="mastercard">Master Card</option>
+									<option value="americanexpress">American Express</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="rightaligntd">
+								Card Number:
+							</td>
+							<td>
+								<input type="text" name="cardnumber" id="cardnumber">
+							</td>
+						</tr>
+						<tr>
+							<td class="rightaligntd">
+								Name on Card:
+							</td>
+							<td>
+								<input type="text" name="cardname" id="cardname">
+							</td>
+						</tr>
+						<tr>
+							<td class="rightaligntd">
+								Card Expiry:
+							</td>
+							<td style="padding-left:3px;">
+								<select name="expmonth" id="expmonth">
+									<option value="month">month</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								<select name="expyear" id="expyear">
+									<option value="year">year</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="centeraligntd">
+								<input type="submit" value="Continue">
+							</td>
+						</tr>					
+					</table>					
+				</form>
+					<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

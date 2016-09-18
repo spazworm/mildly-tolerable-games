@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../templates/template.dwt" -->
+
+<head>
+	<title>Mildly Tolerable Games</title>
+
+	<!-- CSS page link -->
+	<link href="../css/template1.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	.auto-style1 {
+		margin-top: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="wholepagecontainer">
+		
+		<!-- MastHead Division -->
+		<div id="masthead">
+			<?php include('../php/loginerror.php'); ?>		
+			<h2>Mildly Tolerable Games</h2>
+			<div id="slogan"><?php include('../php/slogangenerator.php'); ?></div>
+			<div id="cart">
+			<?php include('../php/checkcartnumber.php'); ?>
+			</div>
+		</div>
+		
+		<div id="menulogin">
+			<table class="fullwidthtable"><tr>
+			<td><a href="../html/index.html">Home</a> |
+			 <a href="../html/sale.html">Sale</a> |
+			  <a href="../html/new.html">New</a> |
+			   <a href="../html/search.html">Search</a> |
+			   <a href="../html/help.html">Help</a></td>
+			<td style="text-align:right;">
+			<?php include('../php/checklogin.php'); ?>
+			</td>	
+			</tr></table>
+		</div>
+		
+		
+		<!-- Container Division -->
+		<div id="container">
+		
+				<!-- Right Column Division -->
+				<div id="right_col" class="auto-style1">
+					<?php include('../php/randomsaledivs.php'); ?>
+
+				</div>	
+		
+				<!-- Content Division -->
+				<div id="page_content">
+				<!-- #BeginEditable "pagecontent" -->Right Column Here<br>
+				<h5>Register Product</h5>
+				<br>
+				<form action="../php/registerproduct.php" method="post">
+				<table>
+				<tr><td class="rightaligntd">Product Name:</td><td><input type="text" name="name"></td></tr>
+				<tr><td class="rightaligntd">Genre(s):</td><td><input type="text" name="genre"></td></tr>
+				<tr><td class="rightaligntd">Developer:</td><td><input type="text" name="developer"></td></tr>
+				<tr><td class="rightaligntd">Publisher:</td><td><input type="text" name="publisher"></td></tr>
+				<tr><td class="rightaligntd">Description:</td><td><input type="text" name="description"></td></tr>
+				<tr><td class="rightaligntd">Price:</td><td><input type="text" name="price"></td></tr>
+				<tr><td class="rightaligntd">Current Discount:</td><td><input type="text" name="currentDiscount"></td></tr>
+				<tr><td class="rightaligntd">Original Release Date:</td><td><input type="text" name="originalRelease"></td></tr>
+				<tr><td colspan="2" class="centeraligntd"><input type="submit" value="Submit"></td></tr>
+				</table>
+				</form>
+
+				
+				
+					<!-- #EndEditable -->
+				&nbsp;</div>
+				
+				
+		</div>
+		
+		<div id="breakerbar"></div>
+		
+		<!-- Footer Division -->
+		<div id="footer">
+			Stephen de Bruin 2014</div>
+			
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

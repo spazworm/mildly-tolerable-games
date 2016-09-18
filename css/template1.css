@@ -1,0 +1,454 @@
+﻿/* CSS layout */
+
+.background= #191919;
+.text= #C1C1C1;
+.text2= #808080;
+.window= #414141;
+#somethingcolorpicker{
+	color:#808080;
+}
+input, select, textarea { 
+	padding: 2px;
+	background-color: #505050;
+	color: #C5C5C5;
+	border-style:solid;
+	border-width:1px;
+	padding-left:6px;
+	padding-right:6px;
+}
+input:focus, select:focus, textarea:focus {
+	background:#666666;
+	outline-color:#319526;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+	background:#191919;
+	outline-color:#319526;
+}
+
+input[type=submit]:hover {
+	cursor:pointer;
+}
+
+a:link { /* unvisited link */
+	color:#C1C1C1;
+	text-decoration:none;
+}      
+a:visited {color:#C1C1C1;}  /* visited link */
+a:hover { /* mouse over link */
+	color:#C1C1C1;
+	text-decoration:underline;}  
+a:active {color:#C1C1C1;}  /* selected link */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#191919;
+	background-image:url('../images/bakgroundpattern.png');
+	font-family:"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	background-size:100px 100px;
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+
+h2 {
+	margin-bottom: 0;
+	font-size:x-large;
+}
+
+h3 {
+	margin:0;
+	padding:0;
+	font-size: larger;
+}
+
+h4 {
+	margin:0;
+	padding:0;
+	font-size: larger;
+}
+
+h5 {
+	margin:0;
+	padding:0;
+	font-size: larger;
+	text-align: center;
+}
+
+h6 {
+	margin:0;
+	padding:0;
+	padding-right:5px;
+	font-size: larger;
+	text-align:right;
+}
+.shoppingcarttable {
+	text-align:center;
+	width:100%;
+	position: relative;
+	top:-2px;
+	left:-2px;
+	padding:0;
+	margin:0;
+}
+
+.priceshoppingtd {
+	width:200px;
+}
+
+
+.fullwidthtable {
+	width: 100%;
+	border: 0;
+	vertical-align: 0;
+}*/
+
+form {
+	margin: 0;
+}
+
+.rightaligntd {
+	text-align:right;
+}
+
+.centeraligntd {
+	text-align: center;
+}
+
+.navsquare {
+	margin-left: 5px;
+	margin-right:5px;
+	cursor: pointer;
+}
+
+.navsquare:hover {
+	box-shadow:0 0 0 2px #319526;
+}
+
+#textbox {
+	color:#C1C1C1;
+	margin-left:10px;
+	background-color:#191919;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+#rightarrow {
+	width:35px;
+	height:35px;
+	position:absolute;
+	bottom:2px;
+	right:2px;
+	cursor:pointer;
+	
+}
+
+#rightarrow:hover {
+	box-shadow:0 0 0 2px #319526;}
+
+#leftarrow:hover {
+	box-shadow:0 0 0 2px #319526;
+}
+
+#rightarrowbox {
+	width:39px;
+	height:39px;
+	bottom:0;
+	right:0;
+	background:#191919;
+	position:absolute;
+}
+
+#slideshow {
+	cursor:pointer;
+}
+
+#slideshowinfo {
+	float:right;
+	position:relative;
+	right:50%;
+}
+
+#slideshowinfobox {
+	float: right;
+    right: -50%;
+    position: relative;
+}
+
+#slideshowinfotitle {
+	background-color:#191919;
+	font-size:x-large;
+	padding-left:10px;
+	padding-right:10px;	
+}
+
+#slideshowinfomore {
+	background-color:#191919;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#leftarrowbox {
+	width:39px;
+	height:39px;
+	bottom:0;
+	left:0;
+	background:#191919;
+	position:absolute;
+}
+
+#leftarrow {
+	width:35px;
+	height:35px;
+	position:absolute;
+	bottom:2px;
+	left:2px;
+	cursor:pointer;
+}
+
+#slideshownav {
+	position: absolute;
+	bottom:0;
+	width:176px;
+	height:20px;
+	left:50%;
+	margin-left:-88px;
+	background-color: #191919;
+	padding: 5px;
+}
+
+#slideshow {
+	padding:0;
+	margin-left:-700px;
+	height:300px;
+	width:1400px;
+	position:absolute;
+}
+
+#slideshowdiv {
+	text-align:center;
+	position:relative;
+	max-width:1400px;
+	padding:0;
+	margin:0 auto;
+	height:300px;
+	overflow: hidden;
+	text-align:center;
+}
+
+#discount {
+	font-size:medium;
+	width:65px;
+	background-color:#319526;
+	text-align:center;
+}
+
+#slogan {
+	font-size: small;
+}
+
+#wholepagecontainer{
+	background-color:#414141;
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+	margin-right:2.5%;
+	width: 95%;
+	height:95%;
+	position:relative;
+	min-width:780px;
+	color:#C1C1C1;
+}
+
+#masthead {
+	padding: 10px;
+	position:relative;
+}
+
+#cart {
+	position:absolute;
+	top: 5px;
+	right: 10px;
+	font-size: small;	
+}
+
+#menulogin {
+	background-color:#191919;
+	color:#C1C1C1;
+}
+
+#container {
+	min-width: 600px;
+	margin:0;
+	padding:0;
+	min-height: 840px;
+}
+
+#right_col {
+	width: 250px;
+	float: right;
+	padding-right: 10px;
+	position: relative;
+}
+
+#salebartitle {
+	background-color:#191919;
+	color:#C1C1C1;
+	text-align:center;
+	margin-bottom: 10px;
+	padding:6px;
+	margin-top: 10px;
+}
+
+#salediv {
+	position: relative;
+	padding:0;
+	margin:0;
+	width: 250px;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+#infoinsalediv {
+	z-index:5;
+	background-color:#191919;
+	color:#C1C1C1;
+	position: absolute;
+	bottom: 0;
+	padding:0;
+}
+
+#page_content {
+	margin-right:270px;
+	padding: 0;
+	padding-top: 10px;
+}
+
+#fullpageitem {
+	position:relative;
+	background-color:#191919;
+	color:#C1C1C1;
+	margin-bottom:10px;
+	margin-left:10px;
+	padding:7px;
+}
+#fullpagedescription {
+	background-color: #414141;
+	color: #808080;
+	padding:3px;
+	text-align:justify;		
+}
+
+#searchbar {
+	color:#C1C1C1;
+	margin-left:10px;
+	background-color:#191919;
+	padding:6px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#largelistitem {
+	position:relative;
+	height: 150px;
+	background-color:#191919;
+	color:#C1C1C1;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#shoppingcartitem {
+	height: 75px;
+	background-color:#191919;
+	color:#C1C1C1;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-left:10px;
+	padding: 0px;
+}
+
+#shoppingcartinfo {
+	background-color:#191919;
+	color:#C1C1C1;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-left:10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+
+
+#largelistitemtitle {
+	padding: 6px;
+	margin-left: 4px;
+}
+
+#largelistitemrightcontent {
+	margin-left: 150px;
+}
+
+#largelistitemtext {
+	background-color:#414141;
+	color: #808080;
+	right:10px;
+	left:160px;
+	height:99px;
+	bottom: 10px;
+	position: absolute;
+	font-size: small;
+	overflow:hidden;
+	padding:3px;
+	text-align:justify;
+	
+}
+
+#largelistitemprice {
+	margin-bottom: 0;
+	text-align: right;
+	position: absolute;
+	top:4px;
+	right: 10px;
+	padding: 2px;
+	font-size:large;
+	width: auto;
+}
+
+#largelistitemimage {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	top: 0;
+	left:0;
+}
+
+#greencenteredmessage {
+	text-align:center;
+	color:#319526;
+}
+
+#redcenteredmessage {
+	text-align:center;
+	color:#FF4848;
+}
+
+#loginerror {
+	
+	position:absolute;
+	bottom: 5px;
+	right: 5px;
+	color: #FF4848;
+}
+
+
+#breakerbar {
+	background-color:#191919;
+	height: 20px;	
+}
+
+#footer {
+	padding: 10px;
+}
